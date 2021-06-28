@@ -1,0 +1,62 @@
+/* reset css */
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* body */
+
+body {
+  background: #eee;
+  text-align: center;
+}
+
+/* tab-component */
+
+.tab-component {
+  max-width: 500px;
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 15px auto;
+
+  ul {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+  }
+
+  ul > li[role='tab'] {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+
+    &[aria-selected='true'] {
+      background-color: #ccc;
+      &:first-child {
+        border-top-left-radius: 10px;
+      }
+      &:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+
+  [role='tabpanel'] {
+    height: 300px;
+
+    padding: 15px;
+  }
+}
