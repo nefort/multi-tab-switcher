@@ -6,11 +6,11 @@
  */
 
 class TabSwitcher {
-  component: Element;
-  tabs: NodeListOf<Element>;
-  panels: NodeListOf<Element>;
+  component: HTMLElement;
+  tabs: NodeListOf<HTMLElement>;
+  panels: NodeListOf<HTMLElement>;
 
-  constructor(component: Element) {
+  constructor(component: HTMLElement) {
     this.component = component;
     this.tabs = component.querySelectorAll('[role="tab"]');
     this.panels = component.querySelectorAll('[role="tabpanel"]');
@@ -32,13 +32,13 @@ class TabSwitcher {
     }
   }
 
-  #initializeState(tab: Element, panel: Element, index: number) {
+  #initializeState(tab: HTMLElement, panel: HTMLElement, index: number) {
     tab.setAttribute('aria-selected', String(!panel.hasAttribute('hidden')));
     tab.setAttribute('aria-id', `tab-${index + 1}`);
     panel.setAttribute('aria-labelledby', `tab-${index + 1}`);
   }
 
-  #changeState(targetTab: Element, targetIndex: number): void {
+  #changeState(targetTab: HTMLElement, targetIndex: number): void {
     if (targetTab.getAttribute('aria-selected') === 'true') return;
 
     this.tabs.forEach((tab, index): void => {
@@ -53,8 +53,14 @@ class TabSwitcher {
   }
 }
 
-const tabSwitcher = (component: string): void => {
-  document.querySelectorAll(component).forEach((element) => new TabSwitcher(element));
+const tabSwitcher = (selector: string): TabSwitcher[] => {
+  let tabSwitchers: TabSwitcher[] = [];
+  document.querySelectorAll(selector).forEach((component) => {
+    if (component instanceof HTMLElement) {
+      tabSwitchers.push(new TabSwitcher(component));
+    }
+  });
+  return tabSwitchers;
 };
 
 export { tabSwitcher, TabSwitcher };
