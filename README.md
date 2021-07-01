@@ -18,7 +18,7 @@ npm install multi-tab-switcher
 2. Assign `role = "tab"` to tabs.
 3. Assign `role="tabpanel"` to panels.
 4. Add `hidden` to the panel that is not initially displayed.
-5. In js file, import `tabSwitcher` and pass the class selector given to the component as an argument
+5. In js file, import `tabSwitcher` and pass the class selector given to the component as an argument.
 
 ```html
 <div class="tab-component">
@@ -65,7 +65,7 @@ Add the following above the body closing tag.
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/next-comfort/multi-tab-switcher@1.0.0/dist/tab-switcher-umd.min.js"
+  src="https://cdn.jsdelivr.net/gh/next-comfort/multi-tab-switcher@1.0.1/dist/tab-switcher-umd.min.js"
   integrity="sha384-BS+8V+94+OOWMlwF5b+XCkcIJ0hDmZxS/TRX4S6reg3VxnvoqhymNBcLOs8w6s8W"
   crossorigin="anonymous"
 ></script>

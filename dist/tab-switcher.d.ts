@@ -6,10 +6,10 @@
  */
 declare class TabSwitcher {
     #private;
-    component: Element;
-    tabs: NodeListOf<Element>;
-    panels: NodeListOf<Element>;
-    constructor(component: Element);
+    component: HTMLElement;
+    tabs: NodeListOf<HTMLElement>;
+    panels: NodeListOf<HTMLElement>;
+    constructor(component: HTMLElement);
 }
-declare const tabSwitcher: (component: string) => void;
+declare const tabSwitcher: (selector: string) => TabSwitcher[];
 export { tabSwitcher, TabSwitcher };

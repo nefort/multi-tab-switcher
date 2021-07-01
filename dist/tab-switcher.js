@@ -51,7 +51,13 @@ _TabSwitcher_instances = new WeakSet(), _TabSwitcher_errorHandling = function _T
         isHidden ? panel.setAttribute('hidden', '') : panel.removeAttribute('hidden');
     });
 };
-const tabSwitcher = (component) => {
-    document.querySelectorAll(component).forEach((element) => new TabSwitcher(element));
+const tabSwitcher = (selector) => {
+    let tabSwitchers = [];
+    document.querySelectorAll(selector).forEach((component) => {
+        if (component instanceof HTMLElement) {
+            tabSwitchers.push(new TabSwitcher(component));
+        }
+    });
+    return tabSwitchers;
 };
 exports.tabSwitcher = tabSwitcher;
