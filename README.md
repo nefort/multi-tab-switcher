@@ -70,7 +70,7 @@ Add the following above the body closing tag.
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/npm/multi-tab-switcher@1.1.0/dist/tab-switcher.min.js"
+  src="https://cdn.jsdelivr.net/npm/multi-tab-switcher@1.1/dist/tab-switcher.min.js"
   integrity="sha384-VBFRmooPhAwK51wIfMhtcMJB7vjAR7TmcAhp0vdBsrS20J0rwgvsXwlMyNYpLUo5"
   crossorigin="anonymous"
 ></script>

@@ -1,6 +1,6 @@
 {
   "name": "multi-tab-switcher",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Tab switcher with multi-component support.",
   "main": "dist/tab-switcher.js",
   "types": "dist/tab-switcher.d.ts",
