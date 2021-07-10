@@ -1,5 +1,5 @@
 /*!
- * multi-tab-switcher TypeScript Library v1.0.0
+ * multi-tab-switcher TypeScript Library v1.1.0
  *
  * Copyright Takehisa Tsujii
  * Released under the MIT license
