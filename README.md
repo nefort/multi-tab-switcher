@@ -1,10 +1,15 @@
+[![npm version](https://badge.fury.io/js/multi-tab-switcher.svg)](https://badge.fury.io/js/multi-tab-switcher)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE.md)
+
+[日本語](/README-ja.md)
+
 # Multi Tab Switcher
 
 `Multi Tab Switcher` is a JavaScript library that allows you to easily add the function of switching panels by clicking tabs.
 
 It can be applied to `multiple` components and also supports `TypeScript` typing.
 
-![sample-gif](/umd-example/sample.gif)
+![sample-gif](/cdn-example/sample.gif)
 
 ## Getting Started(npm)
 
@@ -65,8 +70,8 @@ Add the following above the body closing tag.
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/next-comfort/multi-tab-switcher@1.0.1/dist/tab-switcher-umd.min.js"
-  integrity="sha384-/82NEw4YS/QaHcePzM0ju7E8bIvh3cGpCy4ltQanu1wXfv+L/stpAhvBqmMxHyQ2"
+  src="https://cdn.jsdelivr.net/npm/multi-tab-switcher@1.1/dist/tab-switcher.min.js"
+  integrity="sha384-VBFRmooPhAwK51wIfMhtcMJB7vjAR7TmcAhp0vdBsrS20J0rwgvsXwlMyNYpLUo5"
   crossorigin="anonymous"
 ></script>
 <script>
@@ -76,7 +81,7 @@ Add the following above the body closing tag.
 </script>
 ```
 
-Sample code can be found in [umd-example](https://github.com/next-comfort/multi-tab-switcher/blob/main/umd-example/).
+Sample code can be found in [cdn-example](https://github.com/next-comfort/multi-tab-switcher/blob/main/cdn-example/).
 
 ## License
 

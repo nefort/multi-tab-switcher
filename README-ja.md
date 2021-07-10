@@ -1,10 +1,15 @@
+[![npm version](https://badge.fury.io/js/multi-tab-switcher.svg)](https://badge.fury.io/js/multi-tab-switcher)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE.md)
+
+[Endlish](/README.md)
+
 # Multi Tab Switcher
 
 `Multi Tab Switcher` はタブのクリックにより表示するパネルを切り替える機能を簡単に実装できる JavaScript ライブラリです。
 
 複数コンポーネントに対して適用することができ， `TypeScript` の型付けにも対応しております。
 
-![sample-gif](/umd-example/sample.gif)
+![sample-gif](/cdn-example/sample.gif)
 
 ## インストール方法(npm)
 
@@ -65,8 +70,8 @@ tabSwitcher('.tab-component');
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/next-comfort/multi-tab-switcher@1.0.1/dist/tab-switcher-umd.min.js"
-  integrity="sha384-/82NEw4YS/QaHcePzM0ju7E8bIvh3cGpCy4ltQanu1wXfv+L/stpAhvBqmMxHyQ2"
+  src="https://cdn.jsdelivr.net/npm/multi-tab-switcher@1.1/dist/tab-switcher.min.js"
+  integrity="sha384-VBFRmooPhAwK51wIfMhtcMJB7vjAR7TmcAhp0vdBsrS20J0rwgvsXwlMyNYpLUo5"
   crossorigin="anonymous"
 ></script>
 <script>
@@ -76,7 +81,7 @@ tabSwitcher('.tab-component');
 </script>
 ```
 
-サンプルコードは [umd-example](/umd-example/) に掲載しております。
+サンプルコードは [cdn-example](/cdn-example/) に掲載しております。
 
 ## License
 
