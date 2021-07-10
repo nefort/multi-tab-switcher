@@ -1,6 +1,4 @@
 *
 !LICENSE.md
 !README.md
-!dist
-!dist/tab-switcher.js
-!dist/tab-switcher.d.ts
+!dist/*
